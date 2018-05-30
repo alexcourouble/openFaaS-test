@@ -4,4 +4,7 @@ def handle(req):
         req (str): request body
     """
 
-    return req
+    if len(req) == 0:
+    	return "Pass value to function"
+
+    return str.format("Someone said: {}", req)
